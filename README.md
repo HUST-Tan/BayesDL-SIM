@@ -102,7 +102,7 @@ The code is written in python and relies on pytorch. We use the python libraries
 1. Clone this repository into any place you want.
 
    ```
-   git clone https://github.com/BayesDL-SIM
+   git clone https://github.com/HUST-Tan/BayesDL-SIM
    cd BayesDL-SIM
    ```
 
