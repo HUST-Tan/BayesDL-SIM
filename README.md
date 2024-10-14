@@ -142,9 +142,13 @@ The code is written in python and relies on pytorch. We use the python libraries
 
 ## Citation
 
+Our paper is currently under review.
+
 
 
 ## License
+
+This project is released under the Apache 2.0 license.
 
 
 
