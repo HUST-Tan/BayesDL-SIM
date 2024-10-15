@@ -33,7 +33,7 @@ Although recent DL-SIM techniques have substantially advanced SIM, their transpa
 
 ## Requirements
 
-The software was tested on a *Linux* system with Ubuntu version 20.04, and a *Windows* system with Windows 10 Home. 
+The code was tested on a *Linux* system with Ubuntu version 20.04, and a *Windows* system with Windows 10 Home. 
 
 ### Hardware
 
@@ -120,11 +120,11 @@ The code is written in python and relies on pytorch. We use the python libraries
 
 ## How to train BayesDL
 
-+ We used [BioSR](https://www.nature.com/articles/s41592-020-01048-5) dataset to train our model. Please download it from [here](https://figshare.com/articles/dataset/BioSR/13264793) (11.62 GB).
++ We used [BioSR](https://www.nature.com/articles/s41592-020-01048-5) dataset [[2](https://www.nature.com/articles/s41592-020-01048-5)]to train our model. Please download it from [here](https://figshare.com/articles/dataset/BioSR/13264793) (11.62 GB).
 
 + Unpack the tar file to any place you want. Then, run the matlab script `./DatasetGenerate/DataGenerate.m` to generate the training dataset. You can change the `DataPath` and `SavePath` arguments in `./DatasetGenerate/DataGenerate.m` to suit your needs.
 
-+ Change the ```root_dir``` argument in ```train.py``` to the place where the generated training dataset is located.
++ Change the ```--root_dir``` argument in ```train.py``` to the place where the generated training dataset is located.
 
 + Start the training of BayesDL-SIM:
 
@@ -136,7 +136,7 @@ The code is written in python and relies on pytorch. We use the python libraries
   python train.py --model BayesDL --train_type uncertainty_tail --likehood 'gauss' --SGLD False --epoch 300
   ```
 
-+ The well-trained models are saved in the `./heckpoint/F-actin/BayesDL-SIM` folder. You can change the save path by modify the `--exp_name` argument in the `train.py`.
++ The well-trained models are saved in the `./checkpoint/F-actin/BayesDL-SIM` folder. You can change the save path by modify the `--exp_name` argument in the `train.py`.
 
 
 
